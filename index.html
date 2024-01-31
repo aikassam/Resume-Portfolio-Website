@@ -3,47 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="title-page">
-        <h1>Aiman Kassam</h1>
-        <p>A portfolio made from scratch in HTML, CSS, and JavaScript!</p>
-    </div>
-    <div id="quick-links">
-        <ul>
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#academic-experience">Academic Experience</li>
-        </ul>
-    </div>  
-    <div id="about-me">
-        <h2>
-            About me and this page
-        </h2>
-        <p>
-            My name is Aiman Kassam. I am a student enrolled at the University of Guelph studying computer engineering, I am also enrolled in the co-op program! I have a passion for programming and I am currently seeking an internship as a junior developer. This page itself will be a showcase of my skill in HTML, CSS, and JavaScript, as all the code going into this page is done by me personally! You will read about my work and academic experiences, my programming skills, and any projects I have to show them!
-        </p>
-    </div>
-    <div id ="academic-experience">
-        <h2>
-            Academic Experience
-        </h2>
-            <p>In my enrollment at the University of Guelph, I have gained considerable technical knowledge and had the opportunity to put them into practice. Below are technical areas I have practiced and/or gained knowledge in through my academics:</p>
+    
+        <header id="title-page">
+            <h1>My Website</h1>
+        </header>
+        <nav id="navbar">
             <ul>
-                <li><strong>Data Structures</strong> - In completing the Data Structures course, I have learned about the many data structures for storing data &#40linked lists, hash-tables, stacks, etc.&#41. The varying time and space complexities of each data structure and its methods plays a crucial role in determining how data should be stored in websites/applications. A hash-table works much better for accessing a website user's information from a database using their login, as opposed to a linked list which would have to iterate through all users to find your information.</li>
-                <li><strong>Programming in C</strong> - The Introduction to Programming for Engineers course taught me the basics of programming in C. The covered concepts included loops and conditionals, arithmetic, logical, and bitwise operators, functions, etc. A year later taking the Data Structures course, I strengthened the previously mentioned skills in C, while also utilizing pointers to implement data stuctures such as linked lists, and memory management.</li>
-                <li><strong>Object-Oriented Programming in Java</strong> - During the Winter 2023 semester, I took the Object-Oriented Programming course which taught the fundamental concepts of OOP. Through assignments done for the course, I learned about the conventions for set/get methods on objects, about inheritance and polymorphism being used to create like-objects with overridden and individualized traits and methods. Learning OOP taught me to abstract concepts when possible to object methods to provide more readable and modular code.</li>
-                <li><strong>Probability and Statistics</strong> - As one of the most applicable areas of study in mathematics, I particularly enjoyed learning about probability and statistics. Some of the concepts I learned include probability theory, Bayes' Theorem, normal distributions and standard deviations, and linear regression. During this course, I used the knowledge I learned to write a paper that explains probability theory and Bayes' Theorem extensively, which can be found <a href = 'STAT_2120_Written_Assignment__1___Aiman_Kassam.pdf'>here</a>. Learning about linear regression led to an interest in regression algorithms to create predictive models using Python data science libraries, such as Pandas and Scikit-learn.</li>
-                <li><strong>Modelling Systems</strong> - After taking courses in linear algebra and system modelling, I have learned skills to model systems encompassing an incredibly wide variety (traffic flow, circuits, thermal systems, and more). Systems we were tested to mathematically model included systems of equations and matrices to group information together, differential equations to model how the state of a system changes, principle component analysis to determine which components of a system play the most significant role with them, and many more.</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="#">Projects</a></li>
             </ul>
-            <p>University does not only teach you the content of the courses you take, but also many more transferrable skills to succeed in multiple courses and cater to various forms of assessment. Here I have listed many practical skills strengthened in my time at the University of Guelph:</p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        </nav>
 
+        <!-- <div id="quick-links">
+            <ul>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#academic-experience">Academic Experience</a></li>
+            </ul>
+        </div>   -->
+        <div class="container">
+        <section class="page-section" id="about-me">
+            <h2>
+                About me and this page
+            </h2>
+            <p>
+                My name is Aiman Kassam. I am a student enrolled at the University of Guelph studying computer engineering, I am also enrolled in the co-op program. I have a passion for programming and I am currently seeking an internship as a junior developer. This page itself will be a showcase of my skill in HTML, CSS, and JavaScript, as all the code going into this page is done by me personally. You will read about my work and academic experiences, my programming skills, and any projects I have to show them.
+            </p>
+        </section>
+        <section class="page-section" id="work-experience">
+            <h2>Work Experience</h2>
+            <p>I am currently employed at Maple Lodge Farms, and have been since April of 2021. Within the company, I report to two supervisors whom I each have separate responsibilities for. My two sets of responsibilities are to support maintenance on the digital side and to assist our maintenance team with repairing and installing light fixtures throughout the plant and office areas. Certain skills I have used to deliver on my responsibilities effectively are as follows:</p>
+            <ul>
+                <li><strong>Organizational skills</strong> - Preventative maintenance work is distributed as printouts of instructions associated with a machine. I must generate and distribute PMs in an organized manner such that whoever's responsible for maintaining a machine receives the corresponding PMs &#40e.g. electrical, mechanical and refrigeration must be separate, and may be further separated by which plant the machine belongs to&#41. When returned upon completion, I close all PM work orders in our database, create follow-on work orders based on any faulty conditions found to allow maintenance to rectify the situation.</li>
+                <li><strong>Communication</strong> - Certain jobs to be done require parts to be ordered ahead of time, or contractors to assist with the labour requirements of the job. Each of these are processed via material lists, which I process. When given a material list from a maintenance foreman, I create instances of the parts in our database, assign them to work orders, and manage communications between the maintenance and purchasing departments to ensure parts are delivered on time, and to ensure rush order parts are being expedited.</li>
+                <li><strong>Independent Work</strong> -</li>
+            </ul>
+        </section>
     </div>
+    <footer id="main-footer">
+        <p>This website was coded by Aiman Kassam using HTML, CSS and JavaScript</p>
+    </footer>
 </body>
 </html>
